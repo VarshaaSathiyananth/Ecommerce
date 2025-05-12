@@ -30,8 +30,8 @@
  .container {
     max-width: 1300px;
     margin:auto;
-    padding-left: 25px;
-    padding-right:25px;
+    padding-left: 50px;
+    padding-right:50px;
  }
  .row{
     display: flex;
@@ -44,13 +44,13 @@
     min-width:300px;
  }
  .col-2 img{
-    max-width: 80%;
+    max-width: 90%;
     padding: 50px 0;
  }
  .col-2 h1{
    font-size: 50px;
    line-height: 60px;
-   margin: 25px 0;
+   margin: 50px 0;
  }
  .btn{
    display: inline-block;
@@ -91,14 +91,27 @@
    min-width: 200px;
    margin-bottom: 50px;
    transition: transform 0.5s;
-   
+   text-align:center
  }
  .col-4 img{
    width: 100%;
   max-width: 200px;
   max-height: 200px;
-
  }
+.rating {
+  display:contents;
+  gap: 0;             
+  font-size: 15px;      
+  align-items:center;
+  line-height: 1;
+}
+.rating i {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  color: rgb(238, 209, 45);     
+}
+
  .title{
    text-align: center;
    margin:0 auto 10px;
@@ -128,7 +141,7 @@
  }
 .offer{
   background: radial-gradient(white,burlywood);
-  margin-top: 80px;
+  margin-top: 0;
   padding: 30px 0;
 }
 .col-5 .offer-img{
@@ -173,4 +186,211 @@ a{
 }
 .Copyright{
 text-align: center;
+}
+/*-----all products--------*/
+
+.row-2{
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+select{
+  border: 1px solid black;
+  padding: 5px;
+}
+select:focus{
+  outline: none;
+}
+.page-btn{
+  margin:0 auto 80px;
+
+}
+.page-btn span{
+  display: inline-block;
+  border:1px solid burlywood;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+text-align: center;
+line-height: 40px;
+cursor: pointer;
+}
+.page-btn span:hover{
+  background: burlywood ;
+  color:white
+}
+/*----single product------*/
+.single-product{
+  margin-top: 18px;
+  
+}
+.single-product .col-2 img{
+  padding:0;
+}
+.single-product .col-2{
+  padding: 20px;
+}
+.single-product h4{
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.single-product select{
+  display: block;
+  padding:10px;
+  margin-top: 20px;
+}
+.single-product input{
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border : 1px solid burlywood;
+}
+input:focus{
+  outline: none ;
+}
+.small-img-row{
+  display: flex;
+  justify-content: space-around;
+}
+.small-img-col{
+  flex-basis: 20%;
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+
+}
+.row .col-3 p{
+  text-align:center;
+}
+/*-----cart page----*/
+
+.cart-page{
+  margin: 80px auto;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-info{
+  display: flex;
+  flex-wrap: wrap;
+}
+th{
+  text-align: left;
+  padding: 5px;
+  color: black;
+  background:burlywood;
+  font-weight: normal;
+}
+td{
+  padding: 10px 5px;
+}
+td input{
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td a{
+  color:burlywood;
+  font-size: 12px;
+}
+td img{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+
+}
+.total-price table{
+  border-top: 3px solid burlywood;
+  width: 100%;
+  max-width: 400px;
+}
+td:last-child{
+  text-align: right;
+}
+th:last-child{
+  text-align: right;
+}
+
+/*---account page---*/
+.account-page{ 
+  padding: 20px 0;
+
+}
+
+.form-container{
+  background: white;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0,0, 0, 0.1);
+  overflow: hidden;
+}
+.form-container span{
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+.form-btn{
+  display: inline-block;
+}
+.form-container form{
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: transform 1s;
+}
+form input{
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0;
+  border: 1px solid #ccc;
+}
+form .btn{
+  width: 100px;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+form .btn{
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin:10px 0;
+}
+form .btn:focus{
+  outline:none;
+}
+#LoginForm{
+  left:-300px;
+}
+#RegForm{
+  left: 0;
+}
+form a{
+  font-size: 12px;
+}
+#Indicator{
+  width: 100px;
+  border: none;
+  background: burlywood;
+  height: 3px;
+  margin-top:8px;
+  transform: translateX(100px); 
+  transition: transform 1s;
 }
